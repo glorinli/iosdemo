@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF82BE20225843B6008A4B0A /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = CF82BE1F225843B6008A4B0A /* Person.m */; };
+		CF82BE24225B92AE008A4B0A /* MathUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = CF82BE23225B92AE008A4B0A /* MathUtil.m */; };
 		CF97DAC020C03B8900822FF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF97DABF20C03B8900822FF7 /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CF82BE1E225843B6008A4B0A /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		CF82BE1F225843B6008A4B0A /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		CF82BE22225B92AE008A4B0A /* MathUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MathUtil.h; sourceTree = "<group>"; };
+		CF82BE23225B92AE008A4B0A /* MathUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MathUtil.m; sourceTree = "<group>"; };
 		CF97DABC20C03B8900822FF7 /* CmdDemo */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CmdDemo; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF97DABF20C03B8900822FF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,6 +44,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CF82BE1D22584384008A4B0A /* bean */ = {
+			isa = PBXGroup;
+			children = (
+				CF82BE1E225843B6008A4B0A /* Person.h */,
+				CF82BE1F225843B6008A4B0A /* Person.m */,
+			);
+			path = bean;
+			sourceTree = "<group>";
+		};
+		CF82BE21225B927F008A4B0A /* util */ = {
+			isa = PBXGroup;
+			children = (
+				CF82BE22225B92AE008A4B0A /* MathUtil.h */,
+				CF82BE23225B92AE008A4B0A /* MathUtil.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
 		CF97DAB320C03B8900822FF7 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +81,8 @@
 		CF97DABE20C03B8900822FF7 /* CmdDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CF82BE21225B927F008A4B0A /* util */,
+				CF82BE1D22584384008A4B0A /* bean */,
 				CF97DABF20C03B8900822FF7 /* main.m */,
 			);
 			path = CmdDemo;
@@ -118,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF82BE20225843B6008A4B0A /* Person.m in Sources */,
+				CF82BE24225B92AE008A4B0A /* MathUtil.m in Sources */,
 				CF97DAC020C03B8900822FF7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
