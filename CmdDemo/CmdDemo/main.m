@@ -25,6 +25,12 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Age is %1$d", AGE);
         
         NSLog(@"Max of %1$d and %2$d is %3$d", 1, 2, [MathUtil max:1 secondNumber:2]);
+        
+        // Block
+        void (^simpleBlock)(void) = ^{
+            NSLog(@"I am a simple block");
+        };
+        simpleBlock();
     }
     
     return 0;
