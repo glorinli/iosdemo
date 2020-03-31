@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:../Pickers/CustomPickerViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../Pickers/DatePickerViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../Pickers/DependentComponentPickerViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../Pickers/DoubleComponentPickerViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "group:../Pickers/SingleComponentPickerViewController.swift">
+   </FileRef>
+   <FileRef
+      location = "self:">
+   </FileRef>
+</Workspace>
