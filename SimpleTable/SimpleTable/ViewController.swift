@@ -16,7 +16,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell = tableView.dequeueReusableCell(withIdentifier: simpleTableIdentifier)
         if cell == nil {
-            cell = UITableViewCell(style: UITableViewCell.CellStyle.default,
+            cell = UITableViewCell(style: UITableViewCell.CellStyle.subtitle,
                                    reuseIdentifier: simpleTableIdentifier)
         }
         
@@ -26,7 +26,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         cell?.imageView?.highlightedImage = UIImage(named: "ic_star_selected")
         
         cell?.textLabel?.text = dwarves[indexPath.row]
+        
+        cell?.detailTextLabel?.text = "Hala Madrid"
         return cell!
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return section == 0 ? "Haha" : "Xixi"
     }
     
 
