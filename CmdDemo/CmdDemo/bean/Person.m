@@ -14,4 +14,9 @@
     NSLog(@"I am Axu");
 }
 
+- (void) eat:(Completion)completion {
+    NSLog(@"Eating");
+    completion();
+}
+
 @end

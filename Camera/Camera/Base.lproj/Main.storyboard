@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Camera" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpx-Ce-tiJ">
+                                <rect key="frame" x="0.0" y="832" width="414" height="30"/>
+                                <state key="normal" title="Pick From Library"/>
+                                <connections>
+                                    <action selector="selectExistingPictureOrVideoWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FTf-D7-x9n"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLO-qA-Nnv">
+                                <rect key="frame" x="138.5" y="794" width="137" height="30"/>
+                                <state key="normal" title="New Photo or Video"/>
+                                <connections>
+                                    <action selector="shootPictureOrVideoWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sOS-6o-76y"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Edc-4U-jrk">
+                                <rect key="frame" x="0.0" y="44" width="422" height="739"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Edc-4U-jrk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4Xr-cq-ZNB"/>
+                            <constraint firstItem="gpx-Ce-tiJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="APE-LQ-wrk"/>
+                            <constraint firstItem="gpx-Ce-tiJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Mfy-r0-tMT"/>
+                            <constraint firstItem="wLO-qA-Nnv" firstAttribute="centerX" secondItem="gpx-Ce-tiJ" secondAttribute="centerX" id="PeE-Vv-hI8"/>
+                            <constraint firstItem="gpx-Ce-tiJ" firstAttribute="top" secondItem="wLO-qA-Nnv" secondAttribute="bottom" constant="8" id="PfR-V1-aF6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Edc-4U-jrk" secondAttribute="bottom" constant="79" id="lPE-mJ-rqs"/>
+                            <constraint firstItem="Edc-4U-jrk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="8" id="mxb-a7-X77"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gpx-Ce-tiJ" secondAttribute="bottom" id="s1b-XV-E2G"/>
+                            <constraint firstItem="Edc-4U-jrk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="uPV-0d-IYg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="Edc-4U-jrk" id="1bX-i0-tbn"/>
+                        <outlet property="takePictureButton" destination="wLO-qA-Nnv" id="QnC-Dq-FlT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+</document>

@@ -10,9 +10,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void (^Completion)();
+
 @interface Person : NSObject
 
--(void)selfIntroducation;
+- (void) selfIntroducation;
+
+- (void) eat:(Completion)completion;
 
 @end
 

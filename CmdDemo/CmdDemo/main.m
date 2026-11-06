@@ -19,6 +19,9 @@ int main(int argc, const char * argv[]) {
         
         Person *person = [[Person alloc]init];
         [person selfIntroducation];
+        [person eat:^{
+            NSLog(@"I am full");
+        }];
         
         NSLog(@"Storage size of unsigned long: %1$lu", sizeof(unsigned long));
         

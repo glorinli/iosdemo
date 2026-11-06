@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Camera
+
+  Created by Glorin Li on 2020/5/15.
+  Copyright © 2020 Glorin Li. All rights reserved.
+*/
+
+"CFBundleName" = "Camera";
